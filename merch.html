@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Merchandise - The Wax Couple</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Grandstander:wght@400;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+    <style>
+      body {
+        font-family: 'Helvetica', sans-serif;
+        color: #FFFFFF;
+      }
+      .bg-custom {
+        background-color: #36013F; /* Darker purple */
+      }
+      .navbar-nav .nav-link {
+        color: #FFFFFF; /* White font color for navigation links */
+      }
+      .navbar-brand, .navbar-toggler-icon, .navbar-nav .nav-link.active {
+        color: #FFFFFF; /* White color for the brand, toggler icon, and active link */
+      }
+      .header {
+        text-align: center;
+        padding: 20px;
+        background-color: #36013F; /* Darker purple */
+        color: #FFFFFF;
+      }
+      .merch-section {
+        padding: 20px;
+        background-color: #F8F9FA;
+        color: #000000;
+      }
+      .merch-images {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+      }
+      .merch-images img {
+        width: 200px;
+        height: auto;
+      }
+      .footer {
+        background-color: #36013F; /* Darker purple */
+        color: #FFFFFF;
+      }
+      .footer a {
+        color: #FFFFFF;
+      }
+      .custom-form {
+        margin-top: 20px;
+        padding: 20px;
+        background-color: #FFFFFF;
+        color: #000000;
+        border-radius: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-custom">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">
+          <img src="images/wax logo.jpg" alt="The Wax Couple logo" class="logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="services.html">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="merch.html">Merch</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <header class="header">
+      <h1>Our Candles</h1>
+    </header>
+
+    <div class="merch-section">
+      <h2>Explore Our Candle Collection</h2>
+      <p>At The Wax Couple, we take pride in creating premium soy and paraffin candles that are perfect for any occasion. Our diverse range of scents and designs ensures that you'll find the ideal candle to match your taste and style.</p>
+      <div class="merch-images">
+        <img src="images/basic candles.png" alt="Basic Candles">
+        <img src="images/bodies.png" alt="Bodies">
+        <img src="images/couple.png" alt="Couple">
+        <img src="images/female.png" alt="Female">
+        <img src="images/hand wax.png" alt="Hand Wax">
+        <img src="images/light.png" alt="Light">
+        <img src="images/long candle.png" alt="Long Candle">
+        <img src="images/making.png" alt="Making">
+        <img src="images/setting.png" alt="Setting">
+      </div>
+      <a href="https://thewaxcouple.printify.me/products" class="btn btn-primary mt-4">Buy Now</a>
+
+      <h2>Custom Candle Orders</h2>
+      <p>Looking for something unique? We offer special discounts on custom orders. Whether you have a specific design in mind or want to create your own masterpiece, we're here to make your vision a reality. You can also design your own candles directly through our Printify store.</p>
+      <form class="custom-form" action="https://thewaxcouple.printify.me/products" method="post">
+        <div class="mb-3">
+          <label for="name" class="form-label">Name</label>
+          <input type="text" class="form-control" id="name" name="name" required>
+        </div>
+        <div class="mb-3">
+          <label for="email" class="form-label">Email</label>
+          <input type="email" class="form-control" id="email" name="email" required>
+        </div>
+        <div class="mb-3">
+          <label for="candleType" class="form-label">Candle Type</label>
+          <input type="text" class="form-control" id="candleType" name="candleType" required>
+        </div>
+        <div class="mb-3">
+          <label for="message" class="form-label">Additional Details</label>
+          <textarea class="form-control" id="message" name="message" rows="3"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+    </div>
+
+    <!-- Sticky Footer -->
+    <footer class="footer mt-auto py-3">
+      <div class="container">
+        <span>© 2024 The Wax Couple. All rights reserved.</span>
+        <div class="float-end">
+          <a href="https://www.facebook.com/TheWaxCouple" class="me-2"><i class="bi bi-facebook"></i></a>
+          <a href="https://www.twitter.com/TheWaxCouple" class="me-2"><i class="bi bi-twitter"></i></a>
+          <a href="https://www.instagram.com/TheWaxCouple"><i class="bi bi-instagram"></i></a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
+</html>

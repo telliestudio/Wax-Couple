@@ -1,0 +1,78 @@
+/* Style sheet for The Wax Couple */
+
+/* Brand Colors */
+:root {
+    --black: #000000;
+    --purple: #36013F; /* Updated to match the darker purple */
+    --green: #008000;
+    --blue: #0000FF;
+    --grey: #808080;
+    --white: #FFFFFF;
+}
+  
+/* Custom background color for navbar */
+.bg-custom {
+    background-color: var(--purple); /* Updated to match the brand's specific color */
+}
+  
+/* Navbar link styles */
+.nav-link:link, .nav-link:visited {
+    font-family: 'Grandstander', sans-serif;
+    color: var(--white); /* Updated to white for better contrast */
+    font-size: 16px; /* Adjust as needed */
+}
+  
+.nav-link:hover, .nav-link:focus {
+    color: var(--blue); /* Replace with the brand's accent color */
+    text-decoration: underline; /* Optional: Add underline on hover */
+}
+  
+/* Navbar brand logo */
+.logo {
+    width: 10%; /* Adjust the size as needed */
+}
+  
+/* Footer styles */
+.footer {
+    background-color: var(--purple); /* Updated to match the brand's footer background color */
+    color: var(--white); /* Updated to white for better contrast */
+}
+  
+.footer a {
+    color: var(--white); /* Updated to white for better contrast */
+}
+  
+.footer a:hover {
+    color: var(--blue); /* Replace with the brand's footer link hover color */
+}
+  
+/* Footer text styles */
+.footer h5, .footer h6, .footer p {
+    font-family: 'Grandstander', sans-serif;
+    color: var(--white); /* Updated to white for better contrast */
+}
+  
+.footer h5 {
+    font-size: 18px; /* Adjust as needed */
+}
+  
+.footer h6 {
+    font-size: 16px; /* Adjust as needed */
+}
+  
+.footer p {
+    font-size: 14px; /* Adjust as needed */
+}
+  
+/* Social media icon styles */
+.bi {
+    color: var(--white); /* Updated to white for better contrast */
+    font-size: 24px; /* Adjust the size as needed */
+    margin-right: 10px; /* Adjust the spacing as needed */
+}
+  
+/* Additional custom styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    color: var(--black); /* Replace with the brand's primary text color */
+}
